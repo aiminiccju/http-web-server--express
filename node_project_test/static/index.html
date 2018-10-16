@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+  <button onclick="test()">点我</button>
+
+  <script>
+	  function test(){
+		  $.get("/json1.json",function(data,status){
+			  alert("数据: " + data + "\n状态: " + status);
+		  });
+	  }
+  </script>
+</body>
+</html>
